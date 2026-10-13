@@ -16,6 +16,7 @@ let locationInput = document.querySelector('.location');
 
 function getOrdinal(n) {
   const s = ['th', 'st', 'nd', 'rd'];
+  // s 0, 1, 2 , 3
   // const v = n % 100;
   return n + (s[(n - 20) % 10] || s[n] || s[0]);
 }
